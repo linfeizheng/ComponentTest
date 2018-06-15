@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llyt_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llyt_main_article"
+            style="@style/llyt_main_tab">
+
+            <ImageView
+                android:id="@+id/iv_main_article"
+                android:layout_gravity="center"
+                style="@style/iv_main_tab" />
+
+            <TextView
+                android:id="@+id/tv_main_article"
+                style="@style/tv_main_tab"
+                android:text="文章" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_main_meizi"
+            style="@style/llyt_main_tab">
+
+            <ImageView
+                android:id="@+id/iv_main_meizi"
+                android:layout_gravity="center"
+                style="@style/iv_main_tab" />
+
+            <TextView
+                android:id="@+id/tv_main_meizi"
+                style="@style/tv_main_tab"
+                android:text="妹子" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_main_mine"
+            style="@style/llyt_main_tab">
+
+            <ImageView
+                android:id="@+id/iv_main_mine"
+                android:layout_gravity="center"
+                style="@style/iv_main_tab" />
+
+            <TextView
+                android:id="@+id/tv_main_mine"
+                style="@style/tv_main_tab"
+                android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

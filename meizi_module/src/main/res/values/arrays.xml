@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="banner">
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs8tym1e8ej30j60ouwhz.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs8u1joq6fj30j60orwin.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs7l8ijitfj30jg0shdkc.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs35026dloj30j60ov79x.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs34w0jx9jj30j60ootcn.jpg</item>
+        <item> http://ww1.sinaimg.cn/large/0065oQSqly1fs1vq7vlsoj30k80q2ae5.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1frv032vod8j30k80q6gsz.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fs02a9b0nvj30sg10vk4z.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1fryyn63fm1j30sg0yagt2.jpg</item>
+        <item>http://ww1.sinaimg.cn/large/0065oQSqly1frv03m8ky5j30iz0rltfp.jpg</item>
+    </string-array>
+</resources>

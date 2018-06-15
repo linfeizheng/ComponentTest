@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+//        multiDexEnabled true
+
+        javaCompileOptions {
+            // 显式声明支持注解
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api rootProject.ext.dependencies.appcompat_v7
+    api rootProject.ext.dependencies.design
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.retrofit_converter_gson
+    api rootProject.ext.dependencies.retrofit_adapter_rxjava2
+    api rootProject.ext.dependencies.gson
+    api rootProject.ext.dependencies.rxandroid
+    api rootProject.ext.dependencies.rxjava
+    api rootProject.ext.dependencies.constraint_layout
+    api rootProject.ext.dependencies.eventbus
+    api rootProject.ext.dependencies.okhttp3_logging
+    api rootProject.ext.dependencies.arouter_api
+    api rootProject.ext.dependencies.butterknife
+//    api rootProject.ext.dependencies.logger
+    api rootProject.ext.dependencies.fresco
+}
+// implementation：只能在内部使用此模块，
+// 比如我在一个libiary中使用implementation依赖了gson库，然后我的主项目依赖了libiary，
+// 那么，我的主项目就无法访问gson库中的方法。这样的好处是编译速度会加快，
+// 推荐使用implementation的方式去依赖，如果你需要提供给外部访问，那么就使用api依赖即可
