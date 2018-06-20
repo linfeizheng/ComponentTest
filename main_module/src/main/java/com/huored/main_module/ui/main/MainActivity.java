@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.huored.common_module.base.BaseActivity;
 import com.huored.common_module.utils.ReflectUtils;
 import com.huored.main_module.R;
@@ -50,6 +51,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void initTitleBar() {
+        ARouter.getInstance().build("/home/main").navigation();
     }
 
     @Override
@@ -97,6 +99,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case 0:
                 if (null == mArticleFragment) {
                     mArticleFragment = ReflectUtils.getFragment(FRAGMENT_TAG_ARTICLE);
+//                    Fragment fragment = (Fragment) ARouter.getInstance().build("/article/list").navigation();
                 }
                 switchContent(mArticleFragment, FRAGMENT_TAG_ARTICLE);
                 break;

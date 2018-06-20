@@ -7,7 +7,7 @@
 
     <application android:theme="@style/AppTheme">
         <activity
-            android:name="com.huored.meizi_module.MeiziActivity"
+            android:name="com.huored.meizi_module.debug.MeiziActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

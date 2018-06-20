@@ -28,11 +28,6 @@ public abstract class BaseActivity<P extends BasePresenterImpl> extends AppCompa
 
     private ProgressDialog mProgressDialog;
 
-    protected String fileName;
-    protected static final int CAPTURE_PHOTO_REQUEST_CODE = 0x0112;
-    protected static final int REQUEST_CAMERA = 0x201;
-    protected static final int REQUEST_PHONE_STATE = 0x202;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

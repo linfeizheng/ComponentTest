@@ -7,9 +7,6 @@
 
     <application android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.articlelist.ArticleListActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
             android:name=".ui.detail.ArticleActivity"
             android:screenOrientation="portrait" />
     </application>

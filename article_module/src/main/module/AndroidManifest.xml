@@ -3,7 +3,7 @@
     package="com.huored.article_module">
 
     <application
-        android:name=".MainApplication"
+        android:name="debug.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.articlelist.ArticleListActivity"
+            android:name="debug.ArticleListActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

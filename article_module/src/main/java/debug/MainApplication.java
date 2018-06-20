@@ -1,4 +1,4 @@
-package com.huored.article_module;
+package debug;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.huored.common_module.base.BaseApplication;
